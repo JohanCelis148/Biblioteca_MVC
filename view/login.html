@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../asset/css/login.css">
+    <link rel="shortcut icon" href="../asset/img/libro.png" type="image/x-icon">
+    <!-- Agregar jquery -->
+    <script src="../asset/library/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/Js/Login2.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="../asset/img/biblioteca-libros.jpg" alt="" class="img"> -->
+        <div class="formulario1">
+            
+            <img src="../asset/img/biblioteca-libros.jpg" alt="" class="img">
+
+            <div class="form">
+                <h2>Iniciar Sesión</h2><br>
+            <div class="input-box">
+                <span class="icon"><i class="fi fi-rr-user"></i></span>
+                <input type="text" name="txtuser" id="txtuser" required>
+                <label>Usuario</label>
+            </div>
+            <div class="input-box" style="margin-top: 50px;">
+                <span class="icon"><i class="fi fi-rr-key"></i></span>
+                <input type="password" name="txtpassword" id="txtpassword" required>
+                <label>Contraseña</label>
+            </div>
+            <button type="button" id="btnLogin" name="btnLogin" onclick="Login();">Iniciar Sesión</button>
+            <h3>Olvidaste la contraseña <a href="">Click Aqui!</a></h3>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asset/css/view/seguridad/personas.css">
+    <link rel="stylesheet" href="../../asset/library/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br>
+    <h3 class="titulo">Registro Libros</h3>
+    <br><br>
+    <form class="row g-3">
+        <input type="hidden" name="id" id="id" value="">
+        
+        <div class="col-md-2">
+          <label for="validationDefault01" class="form-label">Código</label>
+          <input type="text" class="form-control" id="codigo" name="codigo" required placeholder="Ingrese el código de referencia">
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault01" class="form-label" >Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Ingrese el nombre del libro" onkeyup="javascript:this.value=this.value.toUpperCase();"><br>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault01" class="form-label">Descripción</label>
+          <input type="text" class="form-control" id="descripcion" name="descripcion" required placeholder="Ingrese la descripción del libro">
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault01" class="form-label">Autor</label>
+          <input type="text" class="form-control" id="descripcion" name="descripcion" required placeholder="Ingrese el nombre del autor Ej:(Gabriel García Márquez)">
+        </div>
+        <div class="col-md-2">
+            <label for="validationDefault04" class="form-label">Ubicacion</label>
+            <select class="form-select" id="estado" name="estado" required>
+              <option selected disabled value="">--- Seleccione ---</option>
+              <option value="0">Activo</option>
+              <option value="1">Inactivo</option>
+            </select>
+          </div>
+
+          <div class="col-md-2">
+            <label for="validationDefault04" class="form-label">Categoría</label>
+            <select class="form-select" id="estado" name="estado" required>
+              <option selected disabled value="">--- Seleccione ---</option>
+              <option value="0">Activo</option>
+              <option value="1">Inactivo</option>
+            </select>
+          </div>
+        <div class="col-md-1">
+          <label for="validationDefault01" class="form-label">Stock</label>
+          <input type="number" class="form-control" id="descripcion" name="descripcion" required placeholder="Stock">
+        </div>
+        <div class="col-md-2">
+          <label for="validationDefault01" class="form-label">Precio Compra</label>
+          <input type="text" class="form-control" id="genero" name="genero" required required placeholder="$ -------">
+        </div>
+        <div class="col-md-2">
+          <label for="validationDefault01" class="form-label">Precio Venta</label>
+          <input type="text" class="form-control" id="genero" name="genero" required required placeholder="$ -------">
+        </div>
+        <div class="col-md-2">
+          <label for="validationDefault04" class="form-label">Estado</label>
+          <select class="form-select" id="estado" name="estado" required>
+            <option selected disabled value="">--- Seleccione ---</option>
+            <option value="0">Activo</option>
+            <option value="1">Inactivo</option>
+          </select>
+        </div>
+        <div class="col-11">
+            <br>
+          <button class="btn btn-success" type="submit">Registrar</button>
+          <button class="btn btn-warning" type="submit">Modificar</button>
+        </div>
+      </form>
+</body>
+</html>

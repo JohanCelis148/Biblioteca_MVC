@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../asset/css/view/seguridad/personas.css">
+    <link rel="stylesheet" href="../../asset/library/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br>
+    <h3 class="titulo" style="margin-left: 100px;">Prestamo de libros</h3>
+    <br><br>
+    <form class="row g-3">
+        <input type="hidden" name="id" id="id" value="">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <label for="validationDefault01" class="form-label">Código del libro</label>
+          <input type="text" class="form-control" id="codigo" name="codigo" required placeholder="Ingrese el código">
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required disabled><br>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault01" class="form-label">Autor</label>
+          <input type="text" class="form-control" id="autor" name="autor" required disabled>
+        </div>
+        <div class="col-md-2">
+          <label for="validationDefault01" class="form-label">Categoria</label>
+          <input type="text" class="form-control" id="categoria" name="categoria" required disabled>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+            <label for="validationDefault04" class="form-label">Cliente</label>
+            <select class="form-select" id="estado" name="estado" required>
+              <option selected disabled value="">--- Seleccione ---</option>
+              <option value="0">Activo</option>
+              <option value="1">Inactivo</option>
+            </select>
+          </div>
+        <div class="col-md-2">
+          <label for="validationDefault01" class="form-label">Fecha de prestamo</label>
+          <input type="date" class="form-control" id="fechaprestamo" name="fechaprestamo" required>
+        </div>
+        <div class="col-md-2">
+          <label for="validationDefault01" class="form-label">Fecha de devolución</label>
+          <input type="date" class="form-control" id="fechadevolucion" name="fechadevolucion" required>
+        </div>
+        <div class="col-md-1">
+          <label for="validationDefault01" class="form-label">Valor día</label>
+          <input type="text" class="form-control" id="genero" name="genero" value="2500" required disabled placeholder="$ -------">
+        </div>
+        
+        <div class="col-md-2" style="color: red;">
+          <label for="validationDefault01" class="form-label">Total a pagar</label>
+          <input type="text" style="color: red; font-weight: 700;" class="form-control" id="genero" disabled name="genero" required required placeholder="$ -------">
+        </div>
+
+        <div class="col-md-1">
+            <label for="validationDefault04" class="form-label">Estado</label>
+            <select class="form-select" id="estado" name="estado" required>
+              <option selected disabled value="">-Seleccione-</option>
+              <option value="0">Activo</option>
+              <option value="1">Inactivo</option>
+            </select>
+          </div>    
+        
+        <div class="col-4" style="margin-left: 99%;">
+            <br><br>
+          <button class="btn btn-success" type="submit">Prestar</button>
+          <button class="btn btn-danger" type="reset">Limpiar</button>
+        </div>
+      </form>
+</body>
+</html>
